@@ -1,0 +1,22 @@
+{
+  "name": "vaccinewebapp",
+  "version": "1.0.0",
+  "description": "Vaccine Web Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error\"",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "geo",
+    "leaflet.js",
+    "markercluster",
+    "vaccine"
+  ],
+  "author": "Jon Legasa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  }
+}

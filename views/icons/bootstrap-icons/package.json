@@ -1,0 +1,135 @@
+{
+  "_args": [
+    [
+      "bootstrap-icons",
+      "/mnt/c/Users/Jon Legasa/Desktop/root-vaccineweb"
+    ]
+  ],
+  "_from": "bootstrap-icons@latest",
+  "_hasShrinkwrap": false,
+  "_id": "bootstrap-icons@1.4.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/bootstrap-icons",
+  "_nodeVersion": "14.16.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/bootstrap-icons_1.4.1_1617072640596_0.47566487782690414"
+  },
+  "_npmUser": {
+    "email": "markdotto@gmail.com",
+    "name": "mdo"
+  },
+  "_npmVersion": "6.14.11",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "bootstrap-icons",
+    "raw": "bootstrap-icons",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/bootstrap-icons/-/bootstrap-icons-1.4.1.tgz",
+  "_shasum": "5071d2ea9dab0ad79ca5673a97a0074872c74e14",
+  "_shrinkwrap": null,
+  "_spec": "bootstrap-icons",
+  "_where": "/mnt/c/Users/Jon Legasa/Desktop/root-vaccineweb",
+  "author": {
+    "name": "mdo"
+  },
+  "bugs": {
+    "url": "https://github.com/twbs/icons/issues"
+  },
+  "dependencies": {},
+  "description": "Official open source SVG icon library for Bootstrap",
+  "devDependencies": {
+    "@twbs/svg-sprite": "^1.6.2",
+    "autoprefixer": "^10.2.5",
+    "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.5",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.22.0",
+    "fantasticon": "^1.1.3",
+    "find-unused-sass-variables": "^3.1.0",
+    "hugo-bin": "^0.70.0",
+    "linkinator": "^2.13.6",
+    "lockfile-lint": "^4.6.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "purgecss": "^4.0.3",
+    "stylelint": "^13.12.0",
+    "stylelint-config-twbs-bootstrap": "^2.1.0",
+    "svgo": "^2.3.0",
+    "vnu-jar": "21.2.5"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 1334,
+    "integrity": "sha512-EcATaAGsRgyy4NtnwXlNzkgWttpb6PqcXCoLtZZKdZtAYJU/WYqoQFxuGFKAppOlf7NmKpvGtSsC/921H7LIjg==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgYpIBCRA9TVsSAnZWagAAFgEQAJI7G0eFLIciwYr76NVl\n8u0BSFGt5X97q9goAAoyR6iUBW36sBSYzdJiIeWiqJqTeli2jnqwgnyxoVGw\n4Tl678gbslUrCNxG82RqYwSb4/yrgAcgZ54861pS9XlKnJViit14YtOrBBOH\nTTwsSZfYwjQZh3+lhkywcSnoTrZW5pIrU9hwvhCb7odDFL/gedHZmpuofrOG\nSGNs7npS2urIWIo8IV6nYKFUDDr6hdK/3b2K+ua0TP9pMUfDMM0ffCJqWBfA\njjIOkFcibNF8WXk5kSMB5OluNNwv/5l/jtTWcEsvdslVdTcq3lqVgBsNjiaR\nueSsFlZmTdaaQhHQM2bIq4xoLHzNREs7fw+/vvh3wggFvL7f3tjkUt9E1wDd\n9j8aCbLEiClxahOmfc5ilJmxUecNjSZO5Vs10EsLE8snqQOAgY+n05gpEDCY\niBeW+sfvbbh+Auggz5m/h84nNVa772RkqhO169bwcior8iAWK99maCZHWwLF\nUSo9rxH0RLVsNHmiDe+Or50Tg8OL5KRW+wyIUDXhVjDa8emOW4kz5uta2SiQ\ndzYiX3M4V6cBShcgrAP1NJsq822lAcnt5LZ6T9EoVGxUOwjQxOHQITgo583O\nPcr1prAoIi3XkJmjIqjrR1D7xpXM97cN3nBO7EewfDL+DK+3Lj/pWxEV8z/d\nlXWf\r\n=Vv9m\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "5071d2ea9dab0ad79ca5673a97a0074872c74e14",
+    "tarball": "https://registry.npmjs.org/bootstrap-icons/-/bootstrap-icons-1.4.1.tgz",
+    "unpackedSize": 1879753
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "gitHead": "7cdd53b866ad5d7b9a04b9342ea9ed991626a503",
+  "homepage": "https://icons.getbootstrap.com/",
+  "hugo-bin": {
+    "buildTags": "extended"
+  },
+  "keywords": [
+    "bootstrap",
+    "icons"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "bootstrap-admin",
+      "email": "getbootstrap@gmail.com"
+    },
+    {
+      "name": "mdo",
+      "email": "markdotto@gmail.com"
+    },
+    {
+      "name": "xhmikosr",
+      "email": "xhmikosr@gmail.com"
+    }
+  ],
+  "name": "bootstrap-icons",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twbs/icons.git"
+  },
+  "scripts": {
+    "docs-build": "hugo --cleanDestinationDir",
+    "docs-purge": "npm run docs-build && purgecss --css docs/static/assets/css/bootstrap.min.css --content \"_site/**/*.html\" docs/static/assets/js/bootstrap.min.js --keyframes --output docs/static/assets/css/",
+    "docs-serve": "hugo server --port 4000 --disableFastRender",
+    "icons": "npm-run-all icons-main --aggregate-output --parallel icons-sprite icons-font",
+    "icons-font": "fantasticon",
+    "icons-main": "node build/build-svgs.js",
+    "icons-sprite": "svg-sprite --svg-namespace-classnames false --symbol --symbol-dest . --symbol-sprite bootstrap-icons.svg icons/*.svg",
+    "icons-zip": "cross-env-shell \"rm -rf bootstrap-icons-$npm_package_version && cp -r icons/ bootstrap-icons-$npm_package_version && cp bootstrap-icons.svg bootstrap-icons-$npm_package_version && cp -r font/ bootstrap-icons-$npm_package_version && zip -r9 bootstrap-icons-$npm_package_version.zip bootstrap-icons-$npm_package_version && rm -rf bootstrap-icons-$npm_package_version\"",
+    "netlify": "cross-env-shell HUGO_BASEURL=$DEPLOY_PRIME_URL npm-run-all icons docs-purge docs-build",
+    "pages": "node build/build-pages.js",
+    "publish": "npm-run-all icons docs-build icons-zip",
+    "start": "npm run docs-serve",
+    "test": "npm-run-all docs-build --parallel --aggregate-output --continue-on-error test:*",
+    "test:eslint": "eslint --cache --cache-location node_modules/.cache/.eslintcache --report-unused-disable-directives .",
+    "test:fusv": "fusv docs/assets/scss/",
+    "test:linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
+    "test:lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
+    "test:stylelint": "stylelint docs/assets/scss/ --cache --cache-location node_modules/.cache/.stylelintcache --rd",
+    "test:vnu": "node build/vnu-jar.js"
+  },
+  "version": "1.4.1"
+}

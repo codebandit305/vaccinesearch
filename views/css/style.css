@@ -1,0 +1,77 @@
+html, body {
+    clear: both;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: "Arial";
+    scroll-behavior: smooth;
+}
+
+.nav-links {
+    text-align: center;
+}
+
+.nav-links a{
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.mycluster {
+    width: 40px;
+    height: 40px;
+    background-color: greenyellow;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.radius {
+    width: 50px;
+}
+
+
+#mapid {
+    height: 100%;
+    padding: 10px;
+}
+
+.seach-button {
+     font-size: 1.5em;
+}
+
+.btn-effect {
+    margin-top: 10px;
+}
+
+#addressresult {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+    position: absolute;
+}
+
+
+.main-container {
+    min-height: 120vh;
+    font-family: "Arial";
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.main-container .content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    margin-top: 15px;
+}
+
+.radius-select {
+     padding: 8px 16px;
+     font-size: 15px;
+}
