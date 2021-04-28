@@ -4,17 +4,25 @@
   "description": "Vaccine Web Application",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error\"",
+    "test": "echo Error not working",
     "start": "node app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codebandit305/vaccinesearch.git"
+},
   "keywords": [
     "geo",
     "leaflet.js",
     "markercluster",
-    "vaccine"
+    "vaccine",
+    "javascript",
+    "node",
+    "yarn",
+    "express"
   ],
   "author": "Jon Legasa",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "node-fetch": "^2.6.1"
