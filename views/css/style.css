@@ -9,6 +9,7 @@ html, body {
 
 .nav-links {
     text-align: center;
+    padding: 5px;
 }
 
 .nav-links a{

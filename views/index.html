@@ -25,20 +25,19 @@
         <div class="main-container text-center container-fluid" id="top">
             <div class="logo">
                 <h1 class="text-center">NYS Vaccine Search</h1>
-                <div class="nav-links">
-                    <a href="https://am-i-eligible.covid19vaccine.health.ny.gov/" class="text-center">State Ran Sites</a>
-                    <a href="https://somosvaccination.mdland.com/p/covid" class="text-center">City Ran Sites</a>
-                </div>
                 <!-- <a href="#"><button class="btn btn-secondary btn-effect" type="button" id="clear">Contact Me</button></a> -->
             </div>
             <div class="content">
                 <h1>What is your address?</h1>
+
+                <div class="nav-links">
+                    <a href="https://am-i-eligible.covid19vaccine.health.ny.gov/" class="text-center">State Ran Sites</a>
+                    <a href="https://somosvaccination.mdland.com/p/covid" class="text-center">City Ran Sites</a>
+                </div>
+
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Address, City, NY..."  value="" id="addr" />
-
-
-                        <button class="btn btn-outline-secondary" type="button" onclick="addr_search()"><i class="fa fa-search"></i></button>
-
+                        <button class="btn btn-outline-secondary" type="button" onclick="addr_search()" id="test"><i class="fa fa-search"></i></button>
                     </div>
 
                     <a href="#mapid"><button class="btn btn-primary btn-effect" type="button">View Map</button></a>

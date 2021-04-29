@@ -108,6 +108,15 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 }
 
+//enter
+
+var input = document.getElementById("addr");
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("test").click();
+    }
+});
 
 fetch('http://157.230.238.84/api')
     .then(res => res.json())
