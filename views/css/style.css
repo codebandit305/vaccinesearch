@@ -1,5 +1,4 @@
 html, body {
-    clear: both;
     padding: 0;
     margin: 0;
     height: 100%;
@@ -7,15 +6,23 @@ html, body {
     scroll-behavior: smooth;
 }
 
+
 .nav-links {
     text-align: center;
     padding: 5px;
 }
 
 .nav-links a{
-    padding-left: 5px;
+    padding: 5px;
     text-decoration: none;
+    font-size: 20px;
 }
+
+.disclaimer {
+    /* bottom: 0;
+    position: absolute; */
+}
+
 
 .mycluster {
     width: 40px;
@@ -53,7 +60,7 @@ html, body {
 
 
 .main-container {
-    min-height: 120vh;
+    min-height: 100vh;
     font-family: "Arial";
     position: relative;
     text-align: center;
@@ -63,9 +70,18 @@ html, body {
 
 .main-container .content {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+.searchbutton {
+     position: absolute;
+     top: 80px;
+     left: 12px;
+     padding: 10px;
+     z-index: 800;
 }
 
 .logo {

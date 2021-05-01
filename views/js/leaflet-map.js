@@ -16,10 +16,6 @@ let chosenmarkers = [];
 let circlesarray = [];
 
 
-var searchbutton = L.easyButton( '<span class="search-button">Search</span>', function(){
-  document.getElementById('top').scrollIntoView();
-}).addTo(mymap);
-searchbutton.button.style.width = '100px';
 
 var blueicon = new L.Icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
@@ -118,7 +114,7 @@ input.addEventListener("keyup", function(event) {
     }
 });
 
-fetch('http://157.230.238.84/api')
+fetch('http://localhost:3000/api')
     .then(res => res.json())
     .then(res => {
         var data = {
