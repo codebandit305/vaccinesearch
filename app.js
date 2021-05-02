@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 
 const app = express();
-const port = 3000;
+const port = 8000;
 const URL = 'https://www.vaccinespotter.org/api/v0/states/NY.json';
 
 // const indexRoutes = require(__dirname + '/server/routes/routes');
@@ -42,9 +42,18 @@ app.get('/search', function (req, res) {
     res.sendFile(__dirname + "/views/pages/search.html")
 })
 
+app.get('/contact', function (req, res) {
+    res.sendFile(__dirname + "/views/pages/contact.html")
+})
+
+app.get('/about', function (req, res) {
+    res.sendFile(__dirname + "/views/pages/about.html")
+})
+
 app.get('/api', function (req, res) {
     res.sendFile(__dirname + "/models/vaccine-data.json")
 })
+
 
 app.listen(port, () => {
   console.log(`Web app listening at http://localhost:${port}`);
