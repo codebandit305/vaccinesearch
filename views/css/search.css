@@ -9,18 +9,17 @@ html, body {
 
 .nav-links {
     text-align: center;
+    padding: 5px;
 }
 
 .nav-links a{
-    margin-top: 2px;
-    padding: 5px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .disclaimer {
-    font-size: 20px;
-    margin: 20px;
+    /* bottom: 0;
+    position: absolute; */
 }
 
 
@@ -85,20 +84,10 @@ html, body {
 }
 
 .logo {
-    margin-top: 15px;
+    margin: 30px;
 }
-
 
 .radius-select {
      padding: 8px 16px;
      font-size: 15px;
-}
-
-
-.info {
-    margin-top: 40px;
-    margin-bottom: 0px;
-    margin-left: 40px;
-    margin-right: 40px;
-    font-size: 25px;
 }

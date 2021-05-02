@@ -114,7 +114,7 @@ input.addEventListener("keyup", function(event) {
     }
 });
 
-fetch('http://localhost:3000/api')
+fetch('http://157.230.238.84/api')
     .then(res => res.json())
     .then(res => {
         var data = {

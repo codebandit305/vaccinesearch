@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 
 const app = express();
-const port = 8000;
+const port = 3000;
 const URL = 'https://www.vaccinespotter.org/api/v0/states/NY.json';
 
 // const indexRoutes = require(__dirname + '/server/routes/routes');
@@ -33,8 +33,13 @@ setInterval(() =>
 }), 300000);
 
 
+
 app.get('/', function (req, res) {
     res.sendFile(__dirname + "/views/index.html")
+})
+
+app.get('/search', function (req, res) {
+    res.sendFile(__dirname + "/views/pages/search.html")
 })
 
 app.get('/api', function (req, res) {
