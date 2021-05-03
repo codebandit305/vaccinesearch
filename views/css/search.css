@@ -11,12 +11,15 @@ html, body {
     text-align: center;
     padding: 5px;
     margin-bottom: 10px;
+    display: inline;
 }
 
 .nav-links a{
     text-decoration: none;
     font-size: 20px;
 }
+
+
 
 .disclaimer {
     /* bottom: 0;
