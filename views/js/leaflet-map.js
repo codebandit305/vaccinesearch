@@ -20,13 +20,6 @@ let deleteBool = false;
 
 var scrolltop = document.getElementById('top');
 
-
-var searchbutton = L.easyButton( '<span class="search-button">Search</span>', function(){
-  scrolltop.scrollIntoView();
-}).addTo(mymap);
-
-searchbutton.button.style.width = '100px';
-
 let radius = document.getElementById('radius');
 
 
