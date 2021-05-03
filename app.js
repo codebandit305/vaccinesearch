@@ -3,6 +3,8 @@ const fs = require('fs');
 const fetch = require('node-fetch');
 const bodyParser = require('body-parser');
 const express = require('express');
+const request = require('request');
+
 
 const app = express();
 const port = 8000;
@@ -37,6 +39,27 @@ setInterval(() =>
 app.get('/', function (req, res) {
     res.sendFile(__dirname + "/views/index.html")
 })
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
+app.get('/api', (req, res) => {
+  request(
+    { url: 'http://www.vaccinesnearyou.com/api' },
+    (error, response, body) => {
+      if (error || response.statusCode !== 200) {
+        return res.status(500).json({ type: 'error', message: err.message });
+      }
+
+      res.json(JSON.parse(body));
+    }
+  )
+});
+
+// const PORT = process.env.PORT || 8000;
+// app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
 app.get('/search', function (req, res) {
     res.sendFile(__dirname + "/views/pages/search.html")

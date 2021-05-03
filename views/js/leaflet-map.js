@@ -114,7 +114,7 @@ input.addEventListener("keyup", function(event) {
     }
 });
 
-fetch('http://157.230.238.84/api')
+fetch('http://www.vaccinesnearyou.com/api')
     .then(res => res.json())
     .then(res => {
         var data = {
@@ -211,28 +211,3 @@ fetch('http://157.230.238.84/api')
     mymap.addLayer(markers);
 
 });
-
-
-//CODE BANK
-
-
-//RADIUS SELECTOR
-// <select name="radius" id="radiusselect" onchange="radiusSelector()" value="Radius"><option value="0">Radius</option><option value="1">1 mile</option><option value="5">5 mile</option><option value="10">10 mile</option><option value="15">15 mile</option><option value="20">20 mile</option></select>
-// var legend = L.control({position: 'topright'});
-// legend.onAdd = function (mymap) {
-//     var div = L.DomUtil.create('div', 'info legend');
-//     div.innerHTML = '<select name="radius" id="radiusselect" onchange="test()" value="Radius" class="radius-select"><option value="0" selected>Radius</option><option value="1">1 mile</option><option value="5">5 miles</option><option value="10">10 miles</option><option value="15">15 miles</option><option value="20">20 miles</option></select>';
-//     div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
-//     return div;
-// };
-
-// legend.addTo(mymap);
-// var x = {};
-// function test() {
-//     x = document.getElementById("radiusselect").value;
-//     console.log(x);
-//  }
-
-
-//MARKER TITLE
-//<!-- <div class="pop-container"><h3>Provider: ' + dataset.provider[i] + '</h3><h3>Appointments: ' + appoinments + '</h3><h3>Vaccines ' + vaccinesoutput + '</h3><h3>Address: ' + address + '</h3><a href=' + dataset.url[i] + '><h3>Website: ' + dataset.url[i] + '</h3></a><h3>Vaccine Types: ' + vaccinetypes + '</h3></div> -->
