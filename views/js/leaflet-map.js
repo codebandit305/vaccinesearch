@@ -170,17 +170,6 @@ fetch('https://www.vaccinesnearyou.com/api')
             var title = '<div class="pop-container"><h3>Provider: ' + dataset.provider[i] + '</h3><h3>Appointments: ' + appoinments + '</h3><h3>Vaccines: ' + vaccinesoutput + '</h3><h3>Address: ' + address + '</h3><a href=' + dataset.url[i] + '><h3>Website: ' + dataset.url[i] + '</h3></a><h3>Vaccine Types: ' + vaccinetypes + '</h3></div>';
 
 
-            //assign marker color based on carry vaccines and appointments appointments available
-            if(dataset.appoinments[i] == true && dataset.carryvaccines[i] == true) {
-                appoinments = "Yes";
-                vaccinesoutput = "Yes"
-                var marker = L.marker(new L.LatLng(marker_coordinates[1], marker_coordinates[0]), { icon: blueicon}, { title: title });
-
-            } else if(dataset.appoinments[i] == false || dataset.appoinments[i] == null && dataset.carryvaccines[i] == true) {
-                appoinments = "No";
-                vaccinesoutput = "Yes"
-                var marker = L.marker(new L.LatLng(marker_coordinates[1], marker_coordinates[0]), { icon: redicon}, { title: title });
-            }
 
             //assign address
             if (dataset.address[i] == null) {
@@ -198,6 +187,17 @@ fetch('https://www.vaccinesnearyou.com/api')
                 vaccinetypes = "Pfizer";
             } else if (dataset.typeofvaccines[i]['pfizer'] == true && dataset.typeofvaccines[i]['moderna'] == true) {
                 vaccinetypes = "Pfizer, Moderna"
+            }
+
+            if(dataset.appoinments[i] == true && dataset.carryvaccines[i] == true) {
+                appoinments = "Yes";
+                vaccinesoutput = "Yes"
+                var marker = L.marker(new L.LatLng(marker_coordinates[1], marker_coordinates[0]), { icon: blueicon}, { title: title });
+
+            } else if(dataset.appoinments[i] == false || dataset.appoinments[i] == null && dataset.carryvaccines[i] == true) {
+                appoinments = "No";
+                vaccinesoutput = "Yes"
+                var marker = L.marker(new L.LatLng(marker_coordinates[1], marker_coordinates[0]), { icon: redicon}, { title: title });
             }
 
             marker.bindPopup(title, {
