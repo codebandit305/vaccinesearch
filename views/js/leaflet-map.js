@@ -114,7 +114,7 @@ input.addEventListener("keyup", function(event) {
     }
 });
 
-fetch('http://www.vaccinesnearyou.com/api')
+fetch('https://www.vaccinesnearyou.com/api')
     .then(res => res.json())
     .then(res => {
         var data = {
