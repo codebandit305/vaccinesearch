@@ -162,6 +162,7 @@ fetch('https://www.vaccinesnearyou.com/api')
         var markers = L.markerClusterGroup();
         for (var i = 0; i < dataset.main.length; i++) {
             //assign variables
+            var marker;
             var marker_coordinates = dataset.coordinates[i];
             var vaccinesoutput;
             var appoinments;
@@ -186,7 +187,7 @@ fetch('https://www.vaccinesnearyou.com/api')
             } else if (dataset.typeofvaccines[i]['pfizer'] == true) {
                 vaccinetypes = "Pfizer";
             } else if (dataset.typeofvaccines[i]['pfizer'] == true && dataset.typeofvaccines[i]['moderna'] == true) {
-                vaccinetypes = "Pfizer, Moderna"
+                vaccinetypes = "Pfizer, Moderna";
             }
 
             if(dataset.appoinments[i] == true && dataset.carryvaccines[i] == true) {
