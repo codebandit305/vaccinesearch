@@ -10,6 +10,7 @@ html, body {
 .nav-links {
     text-align: center;
     padding: 5px;
+    margin-bottom: 10px;
 }
 
 .nav-links a{
