@@ -10,9 +10,12 @@ html, body {
 .nav-links {
     text-align: center;
     padding: 5px;
-    margin-bottom: 10px;
-    display: inline;
 }
+
+
+    .nav-links h2 {
+        display: inline;
+    }
 
 .nav-links a{
     text-decoration: none;
@@ -73,9 +76,15 @@ html, body {
 
 .main-container .content {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-device-height: 640px) {
+    .main-container {
+        min-height: 130vh;
+    }
 }
 
 
