@@ -1,4 +1,5 @@
-URL = 'https://www.vaccinespotter.org/api/v0/states/NY.json';
+//assign
+
 
 var start = [42.5, -75];
 var setmarker = [0, 0];
@@ -8,26 +9,12 @@ var settings = {
     zoom: 7.5
 }
 
-const mymap = L.map('mapid', settings);
 
+const mymap = L.map('mapid', settings);
 
 let chosenmarkers = [];
 let circlesarray = [];
 
-const button = document.getElementById('clear');
-let deleteBool = false;
-
-
-var scrolltop = document.getElementById('top');
-
-
-var searchbutton = L.easyButton( '<span class="search-button">Search</span>', function(){
-  scrolltop.scrollIntoView();
-}).addTo(mymap);
-
-searchbutton.button.style.width = '100px';
-
-let radius = document.getElementById('radius');
 
 
 var blueicon = new L.Icon({
@@ -57,7 +44,6 @@ var blackicon = new L.Icon({
     shadowSize: [41, 41]
 });
 
-
 function chooseAddr(lat1, lng1) {
      var chosenmarkers = L.marker(setmarker, { icon: blackicon}, { title: "Your Marker" }).addTo(mymap);
      mymap.setView([lat1, lng1], 14);
@@ -66,11 +52,8 @@ function chooseAddr(lat1, lng1) {
      lon = lng1.toFixed(8);
      chosenmarkers.bindPopup("Your Marker").openPopup();
 
-     function getMiles(i) {
-          return i*0.000621371192;
-     }
      function getMeters(i) {
-          return i*1609.344;
+         return i * 1609.344;
      }
 
      var circlesarray = L.circle([lat1, lng1], {
@@ -80,11 +63,16 @@ function chooseAddr(lat1, lng1) {
          radius: getMeters(1)
      }).addTo(mymap);
 
+     const button = document.getElementById('clear');
+     let deleteBool = false;
+
+
      button.addEventListener('click',()=>{
          let deleteBool = true;
          chosenmarkers.removeFrom(mymap);
          circlesarray.removeFrom(mymap);
-     })
+     });
+
 }
 
 
@@ -94,11 +82,10 @@ function myFunction(arr){
 
      if(arr.length > 0){
          for(i = 0; i < arr.length; i++){
-             // out += "<div class='address' title='Show Location and Coordinates' onclick='chooseAddr(" + arr[i].lat + ", " + arr[i].lon + ");return false;'><br />" + arr[i].display_name + "</div>";
              out += "<div class='address' title='Show Location and Coordinates' onclick='chooseAddr(" + arr[i].lat + ", " + arr[i].lon + ");return false;'>" + arr[i].display_name + "</div><br />";
          }
          document.getElementById('addressresult').innerHTML = out;
-        }else{
+     } else{
       document.getElementById('addressresult').innerHTML = "Sorry, no results...";
      }
 }
@@ -117,7 +104,17 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 }
 
-fetch(URL)
+//enter
+
+var input = document.getElementById("addr");
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("test").click();
+    }
+});
+
+fetch('https://www.vaccinesnearyou.com/api')
     .then(res => res.json())
     .then(res => {
         var data = {
@@ -197,32 +194,16 @@ fetch(URL)
                 appoinments = "Yes";
                 vaccinesoutput = "Yes"
                 var marker = L.marker(new L.LatLng(marker_coordinates[1], marker_coordinates[0]), { icon: blueicon}, { title: title });
-                // marker.bindPopup(title, {
-                //     maxWidth: "auto"
-                // });
-
 
             } else if(dataset.appoinments[i] == false || dataset.appoinments[i] == null && dataset.carryvaccines[i] == true) {
                 appoinments = "No";
                 vaccinesoutput = "Yes"
                 var marker = L.marker(new L.LatLng(marker_coordinates[1], marker_coordinates[0]), { icon: redicon}, { title: title });
-                // marker.bindPopup(title, {
-                //     maxWidth: "auto"
-                // });
-
             }
 
             marker.bindPopup(title, {
                 maxWidth: "auto"
             });
-
-
-            if ( L.Browser.ie ) {
-                alert( "Using Internet Explorer" );
-                marker.bindPopup(title, {
-                    maxWidth: "auto"
-                });
-            }
 
             markers.addLayer(marker);
         }
