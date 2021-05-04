@@ -1,4 +1,6 @@
 //assign
+URL = 'https://www.vaccinespotter.org/api/v0/states/NY.json';
+
 
 
 var start = [42.5, -75];
@@ -114,7 +116,7 @@ input.addEventListener("keyup", function(event) {
     }
 });
 
-fetch('https://www.vaccinesnearyou.com/api')
+fetch(URL)
     .then(res => res.json())
     .then(res => {
         var data = {
