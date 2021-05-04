@@ -29,6 +29,13 @@ setInterval(() =>
                 if (err) {
                     console.log(err);
             }
+
+            const gators = [{
+              type: 'cayman'
+            }];
+
+            fs.writeFileSync('models/cayman.json', JSON.stringify(gators));
+
         });
     console.log("Updated");
 }), 3000);
