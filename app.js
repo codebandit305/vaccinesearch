@@ -18,7 +18,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'views')));
 
-
 setInterval(() =>
     fetch(URL)
         .then(res => res.json())
@@ -33,7 +32,6 @@ setInterval(() =>
         });
     console.log("Updated");
 }), 3000);
-
 
 
 app.get('/', function (req, res) {

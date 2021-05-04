@@ -110,7 +110,7 @@ var input = document.getElementById("addr");
 input.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
-        document.getElementById("test").click();
+        document.getElementById("enter").click();
     }
 });
 
