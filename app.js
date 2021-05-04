@@ -47,7 +47,7 @@ app.use((req, res, next) => {
 
 app.get('/api', (req, res) => {
   request(
-    { url: 'http://www.vaccinesnearyou.com/api' },
+    { url: 'https://www.vaccinesnearyou.com/api' },
     (error, response, body) => {
       if (error || response.statusCode !== 200) {
         return res.status(500).json({ type: 'error', message: err.message });

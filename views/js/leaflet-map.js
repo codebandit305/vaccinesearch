@@ -1,6 +1,4 @@
 //assign
-URL = 'https://www.vaccinespotter.org/api/v0/states/NY.json';
-
 
 
 var start = [42.5, -75];
@@ -116,7 +114,7 @@ input.addEventListener("keyup", function(event) {
     }
 });
 
-fetch(URL)
+fetch('https://www.vaccinesnearyou.com/api')
     .then(res => res.json())
     .then(res => {
         var data = {
@@ -157,7 +155,7 @@ fetch(URL)
         }
 
         L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 }).addTo(mymap);
 
 
