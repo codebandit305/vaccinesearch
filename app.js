@@ -58,9 +58,6 @@ app.get('/api', (req, res) => {
   )
 });
 
-// const PORT = process.env.PORT || 8000;
-// app.listen(PORT, () => console.log(`listening on ${PORT}`));
-
 app.get('/search', function (req, res) {
     res.sendFile(__dirname + "/views/pages/search.html")
 })
