@@ -32,7 +32,7 @@ setInterval(() =>
             }
         });
     console.log("Updated");
-}), 300000);
+}), 3000);
 
 
 
