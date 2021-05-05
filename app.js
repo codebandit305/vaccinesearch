@@ -44,18 +44,18 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/api', (req, res) => {
-  request(
-    { url: 'https://www.vaccinesnearyou.com/api' },
-    (error, response, body) => {
-      if (error || response.statusCode !== 200) {
-        return res.status(500).json({ type: 'error', message: err.message });
-      }
-
-      res.json(JSON.parse(body));
-    }
-  )
-});
+// app.get('/api', (req, res) => {
+//   request(
+//     { url: 'https://www.vaccinesnearyou.com/api' },
+//     (error, response, body) => {
+//       if (error || response.statusCode !== 200) {
+//         return res.status(500).json({ type: 'error', message: err.message });
+//       }
+//
+//       res.json(JSON.parse(body));
+//     }
+//   )
+// });
 
 app.get('/search', function (req, res) {
     res.sendFile(__dirname + "/views/pages/search.html")
