@@ -23,9 +23,9 @@ setInterval(() =>
         .then(res => res.json())
         .then(res => {
 
-            const test = JSON.stringify(res, null, 2);
+            const output = JSON.stringify(res, null, 2);
 
-            fs.writeFile('models/vaccine-data.json', test, (err) => {
+            fs.writeFile('vaccinesearch/models/vaccine-data.json', output, (err) => {
                 if (err) {
                     console.log(err);
             }
