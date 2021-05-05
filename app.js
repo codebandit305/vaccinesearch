@@ -31,8 +31,8 @@ setInterval(() =>
             }
 
         });
-    console.log("Updated on " + new Date());
-}), 30000);
+    console.log("NYS Vaccine Data updated on " + new Date());
+}), 300000);
 
 
 app.get('/', function (req, res) {
