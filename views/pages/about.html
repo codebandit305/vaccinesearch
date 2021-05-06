@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/contact.css">
 
 
 
     <title>NYS Vaccine Locator</title>
-    <link rel="shortcut icon" type="image/jpg" href="img/website-favicon.jpg"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/website-favicon.jpg"/>
 
 
 </head>
@@ -39,15 +40,82 @@
                     </div>
                 </nav>
 
-                        <div class="main-container text-center container-fluid">
-                            <div class="logo">
-                                <h1 class="text-center">Coming Soon!</h1>
+                            <div class="primary-banner">
+                                <h1 class="display-3 text-center">Hello!</h1>
+                                <p class="lead text-center">My name is <b>Jon Legasa</b>.</p>
                                 <!-- <a href="#"><button class="btn btn-secondary btn-effect" type="button" id="clear">Contact Me</button></a> -->
                             </div>
 
-                            <div class="nav-links">
-                                <a href="https://am-i-eligible.covid19vaccine.health.ny.gov/" class="text-center">State Sites</a>
-                                <a href="https://somosvaccination.mdland.com/p/covid" class="text-center">City Sites</a>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-6 col-md-4">
+                                        <h3 class="text-center">About Me</h3>
+
+                                        <p>
+                                            I am a Junior, now going into Senior year, at Fordham Preparatory School in New York City. I love software development
+                                            and anything with computers. I am constantly looking into new interesting topics and using things I have learned
+                                            to solve problems. This website is one example of that.
+                                        </p>
+
+                                    </div>
+
+                                    <div class="col-xs-6 col-md-4">
+                                        <h3 class="text-center">About the Website</h3>
+
+                                        <p>
+                                            I created this website originally as a fun project for myself. I did not think beyond showing locations on a map. However, as I added new features, I wanted the website to become a useful tool for finding COVID-19 vaccines.
+                                            <b>I am still learning and improving the application, so if there are bugs or you have suggestions on how to improve the website, feel free to contact me <a href="https://www.vaccinesnearyou.com/contact">here</a></b>.
+                                        </p>
+
+                                    </div>
+
+
+                                    <div class="col-xs-6 col-md-4">
+                                        <h3 class="text-center">How I Did It</h3>
+
+                                        <p>
+                                            I use HTML, CSS, and Javascript to display everything you see (map, text, images, etc). I host the server on <a href="https://www.digitalocean.com/">Digital Ocean</a> and use <a href="https://nodejs.org/en/">Node.js</a>
+                                            and <a href="https://www.nginx.com/">NGINX</a> for the backend (routing, updating files, etc). The data on vaccine providers is collected from an API created by <a href="https://www.vaccinespotter.org/api/">Vaccine Spotter</a>.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="created-with container-fluid text-center">
+                                <div class="secondary-banner">
+                                    <h1 class="display-4 text-center">Created With</h1>
+                                    <p class="lead text-center">__________</p>
+                                    <!-- <a href="#"><button class="btn btn-secondary btn-effect" type="button" id="clear">Contact Me</button></a> -->
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-6 col-md-4 clickable">
+                                        <a href="href=https://nodejs.org/en/"><img src="../images/nodejs.png" alt="nodejs" class="img-fluid"></a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 clickable">
+                                        <a href="https://www.nginx.com/"><img src="../images/nginx.png" alt="nginx" class="img-fluid"></a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 clickable">
+                                        <a href="https://www.digitalocean.com/"><img src="../images/digitalocean.png" alt="digitalocean" class="img-fluid"></a>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-xs-6 col-md-4">
+                                        <img src="../images/html.png" alt="nodejs" class="img-fluid">
+                                    </div>
+                                    <div class="col-xs-6 col-md-4">
+                                        <img src="../images/css.png" alt="nginx" class="img-fluid">
+                                    </div>
+                                    <div class="col-xs-6 col-md-4">
+                                        <img src="../images/js.png" alt="digitalocean" class="img-fluid">
+                                    </div>
+                                </div>
+
+
                             </div>
 
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js" integrity="sha512-WXoSHqw/t26DszhdMhOXOkI7qCiv5QWXhH9R7CgvgZMHz1ImlkVQ3uNsiQKu5wwbbxtPzFXd1hK4tzno2VqhpA==" crossorigin=""></script>

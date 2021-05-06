@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
 
 
     <title>NYS Vaccine Locator</title>
-    <link rel="shortcut icon" type="image/jpg" href="../img/website-favicon.jpg"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/website-favicon.jpg"/>
 
 </head>
 <body>
@@ -38,9 +38,39 @@
                     </div>
                 </nav>
 
-                        <div class="main-container text-center container-fluid">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScIlQn56M33Aiuvf_ry3Qd74BRNPZk2Jep5BpZp1B91ucmFTg/viewform?embedded=true" width="640" height="982" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                        </div>
+
+                    <h1 class="display-3 text-center">Contact Me</h1>
+                    <p class="lead text-center">My name is <b>Jon Legasa</b>.</p>
+                    <!-- <a href="#"><button class="btn btn-secondary btn-effect" type="button" id="clear">Contact Me</button></a> -->
+
+
+
+                    <form class="container container-fluid" method="post" name="contact_form" action="/email.php">
+                      <div class="form-group">
+                            <label for="exampleFormControlInput1">Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" name="name">
+                      </div>
+
+                      <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" name="useremail" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+
+                      <!-- <div class="form-group">
+                        <label for="exampleFormControlSelect1">Reason</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Just chatting</option>
+                              <option>Business</option>
+                              <option>Bugs or glitches</option>
+                              <option>Other</option>
+                        </select>
+                      </div> -->
+                      <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-dark" name="submit">Submit</button>
+                    </form>
 
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js" integrity="sha512-WXoSHqw/t26DszhdMhOXOkI7qCiv5QWXhH9R7CgvgZMHz1ImlkVQ3uNsiQKu5wwbbxtPzFXd1hK4tzno2VqhpA==" crossorigin=""></script>
 
