@@ -10,7 +10,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/codebandit305/vaccinesearch.git"
-},
+  },
   "keywords": [
     "geo",
     "leaflet.js",
@@ -24,6 +24,7 @@
   "author": "Jon Legasa",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^9.0.0",
     "express": "^4.17.1",
     "node-fetch": "^2.6.1"
   }

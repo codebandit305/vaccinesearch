@@ -3,9 +3,6 @@ A web application that allows users to find the nearest vaccine providers in a o
 
 #libraries
 Leaflet.markercluster (included)
-Leaflet.easybutton (git clone https://github.com/CliffCloud/Leaflet.EasyButton.git)
-Bootstrap (git clone https://github.com/twbs/bootstrap.git)
 
-
-#app.js
-Change localhost to ip or domain name of webserver
+#.env
+change PASSWD and EMAIL to your password and email

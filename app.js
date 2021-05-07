@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 const bodyParser = require('body-parser');
 const express = require('express');
 const request = require('request');
-
+require("dotenv").config();
 
 const app = express();
 const port = 8000;
