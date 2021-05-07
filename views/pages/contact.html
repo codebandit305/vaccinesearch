@@ -31,9 +31,9 @@
                               <li class="nav-item">
                                 <a class="nav-link" href="https://www.vaccinesnearyou.com/about">About Me</a>
                               </li>
-                              <!-- <li class="nav-item">
+                              <li class="nav-item">
                                 <a class="nav-link" href="https://www.vaccinesnearyou.com/contact">Contact Me</a>
-                              </li> -->
+                              </li>
                           </ul>
                     </div>
                 </nav>
@@ -45,33 +45,37 @@
 
 
 
-                    <form class="container container-fluid" method="post" name="contact_form" action="index.php">
+                    <form class="container container-fluid contact-form" method="post" name="contact_form">
                       <div class="form-group">
                             <label for="exampleFormControlInput1">Name</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" name="name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                       </div>
 
                       <div class="form-group">
                             <label for="exampleFormControlInput1">Email address</label>
-                            <input type="email" name="useremail" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <input type="email" name="useremail" class="form-control" id="email" placeholder="name@example.com">
                       </div>
 
-                      <!-- <div class="form-group">
+
+                    <div class="form-group">
                         <label for="exampleFormControlSelect1">Reason</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select class="form-control" id="subject">
                               <option>Just chatting</option>
                               <option>Business</option>
                               <option>Bugs or glitches</option>
                               <option>Other</option>
                         </select>
-                      </div> -->
+                      </div>
+
                       <div class="form-group">
                             <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+                            <textarea class="form-control" id="message" rows="3" name="message"></textarea>
                       </div>
                       <button type="submit" class="btn btn-dark" name="submit">Submit</button>
                     </form>
 
+
+    <script src="../js/contact.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js" integrity="sha512-WXoSHqw/t26DszhdMhOXOkI7qCiv5QWXhH9R7CgvgZMHz1ImlkVQ3uNsiQKu5wwbbxtPzFXd1hK4tzno2VqhpA==" crossorigin=""></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

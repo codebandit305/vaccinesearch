@@ -4,7 +4,9 @@ const fetch = require('node-fetch');
 const bodyParser = require('body-parser');
 const express = require('express');
 const request = require('request');
+const nodemailer = require('nodemailer');
 require("dotenv").config();
+
 
 const app = express();
 const port = 8000;
@@ -45,15 +47,43 @@ app.use((req, res, next) => {
 });
 
 app.get('/search', function (req, res) {
-    res.sendFile(__dirname + "/views/pages/search.html")
+    res.sendFile(__dirname + "/views/pages/search.html");
 })
 
-app.get('/contact', function (req, res) {
-    res.sendFile(__dirname + "/views/pages/contact.html")
+app.get('/contact', (req, res)=> {
+    res.sendFile(__dirname + "/views/pages/contact.html");
+})
+
+app.post('/contact', function(req, res) {
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+              user: process.env.EMAIL,
+              pass: process.env.PASSWD
+        }
+    })
+
+    const mailOptions = {
+        from: req.body.email,
+        to: 'jon.legasa@gmail.com',
+        subject: req.body.subject,
+        text: req.body.message
+    }
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            // console.log(error);
+            res.send('error');
+        } else {
+            // console.log('Email Sent');
+            res.send("success")
+        }
+    });
+
 })
 
 app.get('/about', function (req, res) {
-    res.sendFile(__dirname + "/views/pages/about.html")
+    res.sendFile(__dirname + "/views/pages/about.html");
 })
 
 app.get('/api', function (req, res) {
