@@ -1,8 +1,8 @@
 # vaccinesearch
-A web application that allows users to find the nearest vaccine providers in a one mile radius
+A web application that allows users to find the nearest vaccine providers in a one mile radius in New York State.
 
 #libraries
-Leaflet.markercluster (included)
+Leaflet.markercluster (included in files)
 
-#.env
-change PASSWD and EMAIL to your password and email
+#contact
+No contact backend available for users to contact admin. 
